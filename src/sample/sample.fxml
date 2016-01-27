@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
+<center>
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn text="First Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="firstName" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Last Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lastName" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</center>
+</BorderPane>
